@@ -304,7 +304,7 @@ QRCode.prototype.svg = function(opt) {
       if (module) {
         var px = (x * xsize + options.padding * xsize).toString();
         var py = (y * ysize + options.padding * ysize).toString();
-        rect += '<rect x="' + px + '" y="' + py + '" width="' + xsize + '" height="' + ysize + '" style="fill:' + options.color + ';shape-rendering:crispEdges;"/>' + ' xlink:href="#p"' + EOL;
+        rect += '<rect x="' + px + '" y="' + py + '" width="' + xsize + '" height="' + ysize + '" style="fill:' + options.color + ';shape-rendering:crispEdges;" xlink:href="#p"/>' + EOL;
       }
     }
   }
